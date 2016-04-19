@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content-type>
+    <display-name>Portfolio</display-name>
+    <content-display-name-script>$('title')</content-display-name-script>
+    <super-type>base:structured</super-type>
+    <is-abstract>false</is-abstract>
+    <is-final>true</is-final>
+    <is-built-in>false</is-built-in>
+    <allow-child-content>true</allow-child-content>
+    <form>
+        <field-set name="basic">
+            <label>Portfolio</label>
+            <items>
+                <input type="TextLine" name="title">
+                    <label>Title</label>
+                    <immutable>false</immutable>
+                    <indexed>true</indexed>
+                    <occurrences minimum="1" maximum="1"/>
+                </input>
+                <input type="TextArea" name="preface">
+                    <label>Preface</label>
+                    <immutable>false</immutable>
+                    <indexed>true</indexed>
+                    <occurrences minimum="1" maximum="1"/>
+                </input>
+                <input name="body" type="Htmlarea">
+                    <label>Body</label>
+                    <occurrences minimum="1" maximum="1"/>
+                </input>
+                <input type="ImageSelector" name="imagePreview">
+                    <label>Image preview</label>
+                    <immutable>false</immutable>
+                    <indexed>false</indexed>
+                    <occurrences minimum="1" maximum="1"/>
+                    <config>
+                        <allowPath>${site}/images/portfolio/</allowPath>
+                    </config>
+                </input>
+                <input type="ImageSelector" name="image">
+                    <label>Image</label>
+                    <immutable>false</immutable>
+                    <indexed>false</indexed>
+                    <occurrences minimum="0" maximum="1"/>
+                    <config>
+                            <allowPath>${site}/images/portfolio/</allowPath>
+                     </config>
+                </input>
+            </items>
+        </field-set>
+    </form>
+</content-type>

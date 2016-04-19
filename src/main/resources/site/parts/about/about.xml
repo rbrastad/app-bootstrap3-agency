@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part>
+    <display-name>About</display-name>
+    <config>
+        <item-set name="menuComponent">
+            <label>Menu</label>
+            <items>
+                <input name="showInMenu" type="CheckBox">
+                    <label>Show in menu</label>
+                    <occurrences minimum="0" maximum="1"/>
+                </input>
+            </items>
+            <occurrences minimum="1" maximum="1"/>
+        </item-set>
+        <item-set name="aboutHeading">
+            <label>About heading</label>
+            <items>
+                <input name="title" type="TextLine">
+                    <label>Title</label>
+                    <occurrences minimum="0" maximum="1"/>
+                </input>
+                <input name="preface" type="TextLine">
+                    <label>Short preface</label>
+                    <occurrences minimum="0" maximum="1"/>
+                </input>
+            </items>
+            <occurrences minimum="1" maximum="1"/>
+        </item-set>
+
+        <item-set name="about">
+            <label>About us</label>
+            <immutable>false</immutable>
+            <custom-text/>
+            <help-text></help-text>
+            <occurrences minimum="1" maximum="100"/>
+            <items>
+                <field-set name="about">
+                    <label></label>
+                    <occurrences minimum="0" maximum="100"/>
+                    <items>
+                        <input type="TextLine" name="timeline">
+                            <label>Date text</label>
+                            <occurrences minimum="1" maximum="1"/>
+                            <help-text>example: MARCH 2015</help-text>
+                        </input>
+                        <input type="TextLine" name="title">
+                            <label>Title</label>
+                            <occurrences minimum="1" maximum="1"/>
+                            <help-text>Banner title</help-text>
+                        </input>
+                        <input name="shortText" type="HTMLArea">
+                            <label>Short text</label>
+                            <occurrences minimum="1" maximum="1"/>
+                            <help-text></help-text>
+                        </input>
+                        <input type="ImageSelector" name="image">
+                            <label>Image</label>
+                            <immutable>false</immutable>
+                            <indexed>false</indexed>
+                            <occurrences minimum="0" maximum="1"/>
+                            <config>
+                                <allowPath>${site}/images/*</allowPath>
+                            </config>
+                            <help-text></help-text>
+                        </input>
+                    </items>
+                </field-set>
+            </items>
+        </item-set>
+        <item-set name="aboutFooter">
+            <label>About last entry text</label>
+            <items>
+                <input name="preface" type="HTMLArea">
+                    <label>Short preface</label>
+                    <occurrences minimum="0" maximum="1"/>
+                </input>
+            </items>
+            <occurrences minimum="1" maximum="1"/>
+        </item-set>
+    </config>
+</part>

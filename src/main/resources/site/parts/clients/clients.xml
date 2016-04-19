@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part>
+    <display-name>Clients</display-name>
+    <config>
+        <item-set name="menuComponent">
+            <label>Menu</label>
+            <items>
+                <input name="showInMenu" type="CheckBox">
+                    <label>Show in menu</label>
+                    <occurrences minimum="0" maximum="1"/>
+                </input>
+            </items>
+            <occurrences minimum="1" maximum="1"/>
+        </item-set>
+        <item-set name="client">
+            <label>Client</label>
+            <immutable>false</immutable>
+            <custom-text/>
+            <help-text></help-text>
+            <occurrences minimum="1" maximum="100"/>
+            <items>
+                <field-set name="client">
+                    <label></label>
+                    <occurrences minimum="0" maximum="100"/>
+                    <items>
+                        <input type="ImageSelector" name="logo">
+                            <label>Logo</label>
+                            <immutable>false</immutable>
+                            <indexed>false</indexed>
+                            <occurrences minimum="1" maximum="1"/>
+                            <config>
+                                <allowPath>${site}/images/logos</allowPath>
+                            </config>
+                            <help-text></help-text>
+                        </input>
+                        <input name="webUrl" type="TextLine">
+                            <label>Website</label>
+                            <occurrences minimum="0" maximum="1"/>
+                            <help-text></help-text>
+                        </input>
+                    </items>
+                </field-set>
+            </items>
+        </item-set>
+
+    </config>
+</part>

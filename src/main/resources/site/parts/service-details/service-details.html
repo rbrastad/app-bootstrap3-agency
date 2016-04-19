@@ -1,0 +1,20 @@
+<!-- Service Details Section -->
+<section id="servicedetails">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <article>
+                    <img class="" data-th-src="${portal.imageUrl({'_id=' + content.data.image, '_scale=block(1170, 500, 0.5, 0.5)', '_format=png'})}"/>
+
+                    <h1 data-th-text="${content.data.title}">ipsum lorum</h1>
+                    <div class="content">
+                        <p data-th-text="${content.data.preface}">ipsum lorum</p>
+                        <div data-th-remove="tag" data-th-utext="${portal.processHtml({'_value=' + content.data.body})}"></div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+

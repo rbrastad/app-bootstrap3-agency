@@ -1,0 +1,18 @@
+<aside data-th-id="${#strings.toLowerCase(component.name)}"  id="clients" class="clients">
+    <div  class="container">
+        <div class="row">
+            <div data-th-each="content, row : ${component.config.client}" data-th-remove="tag">
+                <div data-th-if="${row.count} % 5 == 0"  data-th-remove="tag">
+                    <div class="row"/>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a data-th-target="${content.webUrl} != '' ? '_new' : '' " data-th-href="${content.webUrl} != '' ?  ${content.webUrl } : '#' " href="#">
+                        <img  data-th-src="${portal.imageUrl({'_id=' + content.logo, '_scale=block(200, 50, 0.5, 0.5)', '_format=png'})}"  src="img/portfolio/roundicons.png" class="img-responsive img-centered"  alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+

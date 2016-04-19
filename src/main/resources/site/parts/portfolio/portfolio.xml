@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<part>
+    <display-name>Portfolio</display-name>
+    <config>
+        <item-set name="menuComponent">
+            <label>Menu</label>
+            <items>
+                <input name="showInMenu" type="CheckBox">
+                    <label>Show in top menu</label>
+                    <occurrences minimum="0" maximum="1"/>
+                </input>
+            </items>
+            <occurrences minimum="1" maximum="1"/>
+        </item-set>
+        <item-set name="portfolio">
+            <label>Portfolio part configuration</label>
+            <immutable>false</immutable>
+            <custom-text/>
+            <help-text></help-text>
+            <occurrences minimum="1" maximum="1"/>
+            <items>
+                <field-set name="portfolio">
+                    <label></label>
+                    <occurrences minimum="0" maximum="10"/>
+                    <items>
+                        <input type="TextLine" name="title">
+                            <label>Title</label>
+                            <occurrences minimum="0" maximum="1"/>
+                            <help-text>Banner title</help-text>
+                        </input>
+                        <input name="preface" type="TextLine">
+                            <label>Preface</label>
+                            <occurrences minimum="0" maximum="1"/>
+                            <help-text></help-text>
+                        </input>
+                        <input name="contentSourcePageKey" type="ContentSelector">
+                            <label>Content Source</label>
+                            <occurrences minimum="0" maximum="0"/>
+                            <config>
+                                <relationship>system:reference</relationship>
+                                <allowPath>${site}/*</allowPath>
+                            </config>
+                        </input>
+
+                        <input name="linkReadmorePageKey" type="ContentSelector">
+                            <label>Read more link</label>
+                            <occurrences minimum="0" maximum="0"/>
+                            <config>
+                                <relationship>system:reference</relationship>
+                                <allowPath>${site}/*</allowPath>
+
+                            </config>
+                        </input>
+
+                    </items>
+                </field-set>
+            </items>
+        </item-set>
+    </config>
+</part>

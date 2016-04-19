@@ -1,0 +1,30 @@
+<section data-th-id="${#strings.toLowerCase(component.name)}"   id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading" data-th-text="${component.config.services.title}"></h2>
+                <h3 class="section-subheading text-muted"  data-th-text="${component.config.services.preface}">Lorem ipsum dolor sit amet consectetur.</h3>
+
+            </div>
+        </div>
+        <div class="row">
+            <div data-th-each="content, row : ${contents}" data-th-remove="tag">
+                <div data-th-if="${row.count} % 4 == 0"  data-th-remove="tag">
+                    <div class="row"/>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                    <a data-th-href="${portal.pageUrl({'_id=' + content._id})}"  href="">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-shopping-cart fa-stack-1x fa-inverse" data-th-class="${'fa fa-stack-1x fa-inverse ' + content.data.fontAwesomeIcon}" ></i>
+                            </span>
+                        <h4 class="service-heading col-xs-12 col-sm-12 col-md-12" data-th-text="${content.data.title}">E-Commerce</h4>
+                        <p class="text-muted col-xs-12 col-sm-12 col-md-12" data-th-text="${content.data.preface}">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
