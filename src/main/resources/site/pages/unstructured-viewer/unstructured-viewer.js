@@ -1,18 +1,15 @@
-var libs = {
-    portal: require('/lib/xp/portal'),
-    thymeleaf: require('/lib/xp/thymeleaf'),
-};
+var lib2render = require('/lib/rbrastad/lib2render');
+var viewSources = require('/lib/viewSources.js');
+var portalLib = require('/lib/xp/portal');
 
 function handleGet(req) {
-    var content = libs.portal.getContent();
+    var content = portalLib.getContent();
 
     var params = {
         data: content.data
     };
 
-    var view = resolve('unstructured-viewer.html');
-    return libs.thymeleaf.render(view, params)
-
+    return lib2render.part.renderView( viewSources.pageUnStructuredViewer , params);
 }
 
 exports.get = handleGet;

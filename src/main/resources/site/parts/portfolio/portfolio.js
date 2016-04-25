@@ -6,7 +6,6 @@ function handleGet(req) {
     var config = content.component.config;
 
     if(  lib2render.util.notEmptyOrNull( config.portfolio.contentSourcePageKey ) ) {
-
         content.contents = lib2render.content.getChildren( config.portfolio.contentSourcePageKey );
 
         lib2render.log.debug({

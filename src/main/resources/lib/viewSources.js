@@ -7,5 +7,7 @@ exports.viewService = "/parts/services/services.html";
 exports.viewTeam = "/parts/team/team.html";
 exports.viewClients = "/parts/clients/clients.html";
 
+exports.pageUnStructuredViewer = '/pages/unstructured-viewer/unstructured-viewer.html';
+
 // Used for when part is not configured.
 exports.view412 = '/lib/rbrastad/lib2render/html/412.html';

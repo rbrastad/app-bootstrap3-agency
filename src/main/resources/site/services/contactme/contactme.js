@@ -1,36 +1,36 @@
-var content = require('/lib/xp/content');
-var context = require('/lib/xp/context');
-var portal = require('/lib/xp/portal');
+var contentLib = require('/lib/xp/content');
+var contextLib = require('/lib/xp/context');
+var portalLib = require('/lib/xp/portal');
 var lib2render = require('/lib/rbrastad/lib2render');
 
 function saveForm(data) {
-    return content.create({
-        parentPath:  portal.getSite()["_path"] + '/contact-me',
-        contentType: app.name + ':contact-me',
-        displayName: 'Contact form',
-        data: {
-            fields: data.fields
-        }
+  lib2render.log.debug({
+        name: 'Service contact me form sent in ',
+        json : data
+    });
+
+    return contentLib.create({
+        parentPath: data.path ,
+        contentType: 'base:unstructured',
+        displayName: 'Contact Me: ' + data.name,
+        data: data
     });
 }
 
 exports.post = function(req) {
+    var data = req.params;
 
-    lib2render.log.debug({
-        name: 'Service contact me form sent in ',
-        json : req.params
-    });
+    data.path = portalLib.pageUrl({id: data.contentDestinationKey });
+    data.path = data.path.substr(  data.path.indexOf( portalLib.getSite()["_path"] ) );
 
-    var fields = req.params;
-
-    var entry = context.run({
+    var entry = contextLib.run({
             branch: 'draft',
             user: {
                 login: 'su',
                 userStore: 'system'
             }
         },
-        saveForm.bind(this, fields));
+        saveForm.bind(this, data));
 
     return {
         body: JSON.stringify(entry),
