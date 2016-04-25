@@ -41,17 +41,6 @@
                                 <allowPath>${site}/*</allowPath>
                             </config>
                         </input>
-
-                        <input name="linkReadmorePageKey" type="ContentSelector">
-                            <label>Read more link</label>
-                            <occurrences minimum="0" maximum="0"/>
-                            <config>
-                                <relationship>system:reference</relationship>
-                                <allowPath>${site}/*</allowPath>
-
-                            </config>
-                        </input>
-
                     </items>
                 </field-set>
             </items>
