@@ -367,9 +367,6 @@ article > header > h1 {
   font-size: 16px;
   margin: 0;
 }
-#portfolio * {
-  z-index: 2;
-}
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
   margin: 0 0 30px;

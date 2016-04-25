@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a data-th-href="${portal.pageUrl({'_id=' + content._id})}"  href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a data-th-href="${'#portfolioModal' + row.count}"  href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -28,6 +28,34 @@
                     </div>
                 </div>
             </div>
+
+            <div data-th-each="content, row : ${contents}" data-th-remove="tag">
+                <div class="portfolio-modal modal fade" data-th-id="${'portfolioModal' + row.count}"  id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none">
+                    <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="modal-body">
+                                        <!-- Project Details Go Here -->
+                                        <h2  data-th-text="${content.data.title}">Project Name</h2>
+                                        <p  data-th-text="${content.data.preface}" class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <img class="img-responsive img-centered"  data-th-src="${portal.imageUrl({'_id=' + content.data.image, '_scale=block(500, 360, 0.5, 0.5)', '_format=png'})}" src="img/portfolio/roundicons-free.png" alt="" />
+                                        <div data-th-remove="tag" data-th-utext="${portal.processHtml({'_value=' + content.data.body})}"></div>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
