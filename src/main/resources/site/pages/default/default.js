@@ -13,6 +13,10 @@ function handleGet(req) {
     var site = libs.portal.getSite(); // Current site
     var content = libs.portal.getContent(); // Current content
     var view = resolve('default.html'); // The view to render
+
+    // convert siteConfig to be an array so it will render 0 to many site apps.
+    site.data.siteConfig = libs.render2.util.toArray(site.data.siteConfig);
+
     var model = createModel(); // The model to send to the view
 
     function createModel() {
@@ -55,9 +59,9 @@ function handleGet(req) {
         return extraData;
     }
 
-    libs.render2.log.debug({
+    libs.render2.log.info({
         name: 'Default Page',
-        json : model
+        json :  model
     });
 
     return {
