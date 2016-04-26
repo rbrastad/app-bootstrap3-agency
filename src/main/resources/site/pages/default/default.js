@@ -58,12 +58,7 @@ function handleGet(req) {
         var extraData = ((content.x || {})[appNamePropertyName] || {})[property] || {};
         return extraData;
     }
-
-    libs.render2.log.info({
-        name: 'Default Page',
-        json :  model
-    });
-
+    
     return {
         body: libs.thymeleaf.render(view, model)
     };
