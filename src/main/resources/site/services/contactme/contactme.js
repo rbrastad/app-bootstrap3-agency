@@ -10,25 +10,31 @@ function saveForm(data) {
         displayName: 'Contact Me: ' + data.name,
         data: data
     });
-}
+};
 
 exports.post = function(req) {
     var data = req.params;
+    var httpStatus = 400;
 
-    data.path = portalLib.pageUrl({id: data.contentDestinationKey });
-    data.path = data.path.substr(  data.path.indexOf( portalLib.getSite()["_path"] ) );
+    if( lib2render.util.notEmptyOrNull( data.contentDestinationKey ) ){
+        data.path = portalLib.pageUrl({id: data.contentDestinationKey});
+        data.path = data.path.substr(data.path.indexOf(portalLib.getSite()["_path"]));
 
-    var entry = contextLib.run({
-            branch: 'draft',
-            user: {
-                login: 'su',
-                userStore: 'system'
-            }
-        },
-        saveForm.bind(this, data));
+        var entry = contextLib.run({
+                branch: 'draft',
+                user: {
+                    login: 'su',
+                    userStore: 'system'
+                }
+            },
+            saveForm.bind(this, data));
+
+        httpStatus = 201;
+    }
 
     return {
+        status : httpStatus,
         body: JSON.stringify(entry),
         contentType: 'application/json'
     };
-}
+};

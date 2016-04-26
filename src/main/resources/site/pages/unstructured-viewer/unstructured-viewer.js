@@ -1,5 +1,5 @@
 var lib2render = require('/lib/rbrastad/lib2render');
-var viewSources = require('/lib/viewSources.js');
+var app = require('/lib/app.js');
 var portalLib = require('/lib/xp/portal');
 
 function handleGet(req) {
@@ -9,7 +9,7 @@ function handleGet(req) {
         data: content.data
     };
 
-    return lib2render.part.renderView( viewSources.pageUnStructuredViewer , params);
+    return lib2render.part.renderView( app.pageUnStructuredViewer , params);
 }
 
 exports.get = handleGet;
