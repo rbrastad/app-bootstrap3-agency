@@ -1,5 +1,5 @@
 var lib2render = require('/lib/rbrastad/lib2render');
-var viewSources = require('/lib/viewSources.js');
+var app = require('/lib/app.js');
 
 function handleGet(req) {
     var content =  lib2render.part.resolveComponentContent();
@@ -14,9 +14,9 @@ function handleGet(req) {
             json : content
         });
 
-        return lib2render.part.renderView( viewSources.viewPortfolio , content);
+        return lib2render.part.renderView( app.viewPortfolio , content);
     }else
-        return lib2render.part.renderView( viewSources.view412 , content);
+        return lib2render.part.renderView( app.view412 , content);
 }
 
 exports.get = handleGet;
