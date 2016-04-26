@@ -1,8 +1,8 @@
 <node>
-    <id>4a9ddb68-e483-417a-8e6a-8ffdfb333c7c</id>
+    <id>b9d98d45-16fc-45ee-b17f-d78f70e7e4cb</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T07:05:09.656Z</timestamp>
+    <timestamp>2016-04-26T19:44:00.607Z</timestamp>
     <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
@@ -47,19 +47,16 @@
         <string name="displayName">About</string>
         <string name="type">base:folder</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-03-26T07:43:34.756Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:04:31.379Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-26T07:43:28.568Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:04:25.036Z</dateTime>
         <property-set name="data"/>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
-                </property-set>
-                <property-set name="html-meta">
-                    <string isNull="true" name="htmlMetaDescription"/>
                 </property-set>
             </property-set>
         </property-set>
@@ -96,36 +93,6 @@
                     </indexValueProcessors>
                 </indexConfig>
                 <path>data.htmlarea_text</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>modifier</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>owner</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>attachment</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -206,6 +173,36 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>modifiedTime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>modifier</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>owner</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>attachment</path>
             </pathIndexConfig>
         </pathIndexConfigs>
     </indexConfigs>

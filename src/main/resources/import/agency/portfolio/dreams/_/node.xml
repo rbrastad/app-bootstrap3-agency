@@ -1,9 +1,9 @@
 <node>
-    <id>3566733f-a9a8-4969-9558-81d80513ff2b</id>
+    <id>c65414f4-866b-47ce-8160-55a72696dff5</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T18:52:20.716Z</timestamp>
-    <inheritPermissions>false</inheritPermissions>
+    <timestamp>2016-04-26T19:44:00.591Z</timestamp>
+    <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
             <allow type="array">
@@ -45,22 +45,22 @@
     <data>
         <boolean name="valid">true</boolean>
         <string name="displayName">Dreams</string>
-        <string name="type">no.item.xp.starter.bootstrap3.agency:portfolio</string>
+        <string name="type">no.rbrastad.xp.bootstrap3.agency:portfolio</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-04-17T06:49:33.702Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:29:03.291Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-26T18:50:44.576Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:28:31.866Z</dateTime>
         <property-set name="data">
             <string name="title">Dreams</string>
-            <string name="preface">Website Design</string>
+            <string name="preface">website design</string>
             <string name="body">&lt;p&gt;Dreams is a free PSD web template built by Mathavan Jaya. Dreams is a modern one page web template designed for almost any purpose. It&amp;rsquo;s a beautiful template that&amp;rsquo;s designed with the Bootstrap framework in mind.&lt;/p&gt;
 &lt;p&gt;You can download the PSD template in this portfolio sample item at FreebiesXpress.com.&lt;/p&gt;</string>
-            <reference name="image">955d9dca-671e-439d-be1e-425c8a62aead</reference>
-            <reference name="imagePreview">eed8e693-2ef2-4ca1-8201-c0a1eddf8afb</reference>
+            <reference name="imagePreview">86dd1685-102b-4e2a-a007-0514cd0db743</reference>
+            <reference name="image">2229e205-87bb-430c-99a2-2392cfb33a12</reference>
         </property-set>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
@@ -100,6 +100,36 @@
                     </indexValueProcessors>
                 </indexConfig>
                 <path>data.htmlarea_text</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>creator</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>createdTime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>modifiedTime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -180,36 +210,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>type</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>creator</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>createdTime</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>modifiedTime</path>
             </pathIndexConfig>
         </pathIndexConfigs>
     </indexConfigs>

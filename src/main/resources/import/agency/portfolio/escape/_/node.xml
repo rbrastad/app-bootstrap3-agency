@@ -1,9 +1,9 @@
 <node>
-    <id>5b330640-63a1-4b87-aec2-aa730497b00f</id>
+    <id>bd53dc74-7869-4ff7-9c1d-d840bea88ba4</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T18:52:20.712Z</timestamp>
-    <inheritPermissions>false</inheritPermissions>
+    <timestamp>2016-04-26T19:44:00.586Z</timestamp>
+    <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
             <allow type="array">
@@ -44,23 +44,23 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">Escape</string>
-        <string name="type">no.item.xp.starter.bootstrap3.agency:portfolio</string>
+        <string name="displayName">ESCAPE</string>
+        <string name="type">no.rbrastad.xp.bootstrap3.agency:portfolio</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-04-17T06:50:05.703Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:28:22.042Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-26T18:50:01.320Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:27:40.111Z</dateTime>
         <property-set name="data">
-            <string name="title">Escape</string>
+            <string name="title">ESCAPE</string>
             <string name="preface">website design</string>
             <string name="body">&lt;p&gt;Escape is a free PSD web template built by Mathavan Jaya. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.&lt;/p&gt;
 &lt;p&gt;You can download the PSD template in this portfolio sample item at FreebiesXpress.com.&lt;/p&gt;</string>
-            <reference name="image">0037e5e2-5a62-490b-9c0f-d8a3222bbd91</reference>
-            <reference name="imagePreview">0037e5e2-5a62-490b-9c0f-d8a3222bbd91</reference>
+            <reference name="imagePreview">ec92052a-0bbb-4c98-a75d-230199ccba57</reference>
+            <reference name="image">42cb7d00-4fa6-431a-b1fb-7047e034bee4</reference>
         </property-set>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
@@ -100,6 +100,36 @@
                     </indexValueProcessors>
                 </indexConfig>
                 <path>data.htmlarea_text</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>creator</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>createdTime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>modifiedTime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -180,36 +210,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>type</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>creator</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>createdTime</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>modifiedTime</path>
             </pathIndexConfig>
         </pathIndexConfigs>
     </indexConfigs>

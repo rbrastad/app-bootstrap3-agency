@@ -1,9 +1,9 @@
 <node>
-    <id>9ae05bbb-7ca3-4900-bac4-ad5f8015ddf7</id>
+    <id>747266ef-1667-4317-957e-9ec5f548fad5</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T18:52:20.719Z</timestamp>
-    <inheritPermissions>false</inheritPermissions>
+    <timestamp>2016-04-26T19:44:00.593Z</timestamp>
+    <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
             <allow type="array">
@@ -44,24 +44,23 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">Round Icons</string>
-        <string name="type">no.item.xp.starter.bootstrap3.agency:portfolio</string>
+        <string name="displayName">ROUND ICONS</string>
+        <string name="type">no.rbrastad.xp.bootstrap3.agency:portfolio</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-04-17T06:49:00.832Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:30:01.044Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-26T09:28:39.624Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:29:12.085Z</dateTime>
         <property-set name="data">
-            <string name="title">Round Icons</string>
+            <string name="title">ROUND ICONS</string>
             <string name="preface">Graphic Design</string>
             <string name="body">&lt;p&gt;Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!&lt;/p&gt;
-&lt;p&gt;Want these icons in this portfolio item sample?You can download 60 of them for free, courtesy ofRoundIcons.com, or you can purchase the 1500 icon set here.&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;</string>
-            <reference name="image">6077b486-7224-4185-bbc8-cf2cf436caff</reference>
-            <reference name="imagePreview">9d81018e-45cc-4bbb-a670-b4b60c7e452d</reference>
+&lt;p&gt;Want these icons in this portfolio item sample?You can download 60 of them for free, courtesy ofRoundIcons.com, or you can purchase the 1500 icon set here.&lt;/p&gt;</string>
+            <reference name="imagePreview">c9cbbd82-7407-44c0-9ba3-4d9d4b60f9bf</reference>
+            <reference name="image">75839ca3-fa96-4781-bac0-859c37469995</reference>
         </property-set>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
@@ -101,6 +100,36 @@
                     </indexValueProcessors>
                 </indexConfig>
                 <path>data.htmlarea_text</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>creator</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>createdTime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>modifiedTime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -181,36 +210,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>type</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>creator</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>createdTime</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>modifiedTime</path>
             </pathIndexConfig>
         </pathIndexConfigs>
     </indexConfigs>

@@ -1,8 +1,8 @@
 <node>
-    <id>60eacc1c-9687-4232-b88c-3147c1349530</id>
+    <id>a0e8d760-c58f-4f31-aee0-93ed2e28e88a</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T07:05:09.408Z</timestamp>
+    <timestamp>2016-04-26T19:44:00.681Z</timestamp>
     <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
@@ -44,43 +44,30 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">logo-item-consulting.png</string>
-        <string name="type">media:image</string>
-        <dateTime name="createdTime">2016-04-18T21:02:36.142Z</dateTime>
-        <string name="creator">user:system:su</string>
-        <string name="modifier">user:system:su</string>
-        <dateTime name="modifiedTime">2016-04-18T21:02:36.142Z</dateTime>
+        <string name="displayName">Unstructured Page</string>
+        <string name="type">portal:page-template</string>
         <string name="owner">user:system:su</string>
+        <dateTime name="modifiedTime">2016-04-26T19:24:18.289Z</dateTime>
+        <string name="modifier">user:system:su</string>
+        <string name="creator">user:system:su</string>
+        <dateTime name="createdTime">2016-04-26T19:23:44.015Z</dateTime>
         <property-set name="data">
-            <property-set name="media">
-                <string name="attachment">logo-item-consulting.png</string>
-                <property-set name="focalPoint">
-                    <double name="x">0.5</double>
-                    <double name="y">0.5</double>
-                </property-set>
-            </property-set>
-            <string name="caption"/>
-            <string name="artist"/>
-            <string name="copyright"/>
-            <string name="tags"/>
+            <string name="supports">base:unstructured</string>
         </property-set>
         <property-set name="x">
-            <property-set name="media">
-                <property-set name="imageInfo">
-                    <long name="imageHeight">157</long>
-                    <long name="imageWidth">300</long>
-                    <string name="contentType">image/png</string>
-                    <long name="pixelSize">47100</long>
-                    <long name="byteSize">25882</long>
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
+                <property-set name="menu-item">
+                    <boolean name="menuItem">false</boolean>
+                    <string isNull="true" name="menuName"/>
                 </property-set>
             </property-set>
         </property-set>
-        <property-set name="attachment">
-            <string name="name">logo-item-consulting.png</string>
-            <string name="label">source</string>
-            <binaryReference name="binary">logo-item-consulting.png</binaryReference>
-            <string name="mimeType">image/png</string>
-            <long name="size">25882</long>
+        <property-set name="page">
+            <string name="controller">no.rbrastad.xp.bootstrap3.agency:unstructured-viewer</string>
+            <reference isNull="true" name="template"/>
+            <property-set isNull="true" name="region"/>
+            <property-set name="config"/>
+            <boolean name="customized">false</boolean>
         </property-set>
     </data>
     <indexConfigs>
@@ -115,6 +102,36 @@
                     </indexValueProcessors>
                 </indexConfig>
                 <path>data.htmlarea_text</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>creator</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>createdTime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>modifiedTime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -195,36 +212,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>type</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>creator</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>createdTime</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>modifiedTime</path>
             </pathIndexConfig>
         </pathIndexConfigs>
     </indexConfigs>

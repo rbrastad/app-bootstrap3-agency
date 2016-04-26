@@ -1,8 +1,8 @@
 <node>
-    <id>4191a1fb-e2fb-42af-b2c6-03c5a6c60b68</id>
+    <id>7b7a9780-075b-4fc4-b918-2437a29730d0</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T07:05:09.332Z</timestamp>
+    <timestamp>2016-04-26T19:44:00.605Z</timestamp>
     <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
@@ -47,19 +47,16 @@
         <string name="displayName">Images</string>
         <string name="type">base:folder</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-03-26T07:42:05.769Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:03:24.200Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-26T07:41:59.596Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:03:18.277Z</dateTime>
         <property-set name="data"/>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
-                </property-set>
-                <property-set name="html-meta">
-                    <string isNull="true" name="htmlMetaDescription"/>
                 </property-set>
             </property-set>
         </property-set>

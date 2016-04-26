@@ -1,9 +1,9 @@
 <node>
-    <id>111da410-3db9-4979-b8f0-cc8e14d37202</id>
+    <id>b8e88964-bfe3-4780-a8bf-15289150b2c2</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T18:52:20.708Z</timestamp>
-    <inheritPermissions>false</inheritPermissions>
+    <timestamp>2016-04-26T19:44:00.584Z</timestamp>
+    <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
             <allow type="array">
@@ -44,23 +44,23 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">Golden</string>
-        <string name="type">no.item.xp.starter.bootstrap3.agency:portfolio</string>
+        <string name="displayName">GOLDEN</string>
+        <string name="type">no.rbrastad.xp.bootstrap3.agency:portfolio</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-04-17T06:50:27.462Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:27:31.887Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-26T18:48:43.921Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:26:48.772Z</dateTime>
         <property-set name="data">
-            <string name="title">Golden</string>
-            <string name="preface">Website Design</string>
+            <string name="title">GOLDEN</string>
+            <string name="preface">website design</string>
             <string name="body">&lt;p&gt;Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by Mathavan Jaya. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.&lt;/p&gt;
 &lt;p&gt;You can download the PSD template in this portfolio sample item at FreebiesXpress.com.&lt;/p&gt;</string>
-            <reference name="image">1c052534-b1a8-4db9-9712-a7c56e407d88</reference>
-            <reference name="imagePreview">c7c95be9-d170-4668-984f-380127428899</reference>
+            <reference name="imagePreview">211d00fe-df86-45a4-83a7-7d1b3b31df2b</reference>
+            <reference name="image">121d9792-7528-4a6e-9d4a-d3071518999b</reference>
         </property-set>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
@@ -100,6 +100,36 @@
                     </indexValueProcessors>
                 </indexConfig>
                 <path>data.htmlarea_text</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>creator</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>createdTime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>modifiedTime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -180,36 +210,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>type</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>creator</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>createdTime</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>modifiedTime</path>
             </pathIndexConfig>
         </pathIndexConfigs>
     </indexConfigs>

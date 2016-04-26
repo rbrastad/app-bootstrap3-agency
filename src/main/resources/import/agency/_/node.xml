@@ -1,8 +1,8 @@
 <node>
-    <id>aea01281-229d-4ec2-8f93-e62c7272b910</id>
-    <childOrder>_manualordervalue DESC, _timestamp DESC</childOrder>
+    <id>2a737b1f-c018-4eba-ae85-a58adcf7d3d8</id>
+    <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T18:56:21.361Z</timestamp>
+    <timestamp>2016-04-26T19:44:00.570Z</timestamp>
     <inheritPermissions>false</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
@@ -47,26 +47,26 @@
         <string name="displayName">Agency</string>
         <string name="type">portal:site</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-04-25T18:56:21.360Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:44:00.559Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-01T18:14:35.227Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:00:19.947Z</dateTime>
         <property-set name="data">
             <string isNull="true" name="description"/>
             <property-set name="siteConfig">
-                <string name="applicationKey">no.item.xp.starter.bootstrap3.agency</string>
+                <string name="applicationKey">no.rbrastad.xp.bootstrap3.agency</string>
                 <property-set name="config">
-                    <string name="copyright">Copyright © Your Website</string>
-                    <string name="footerText">&lt;p&gt;Footer text&lt;/p&gt;</string>
-                    <string name="facebook">http://facebook.com</string>
+                    <string name="copyright">Copyright © Your Website 2014</string>
+                    <string name="footerText">&lt;p&gt;&lt;a title="Visit: www.datadigg.no" href="http://www.datadigg.no"&gt;www.datadigg.no&lt;/a&gt;&lt;/p&gt;</string>
+                    <string name="siteText">Agency</string>
+                    <string name="facebook">http://www.facebook.com</string>
                     <string name="linkedin">http://www.linkedin.com</string>
                     <string name="twitter">http://www.twitter.com</string>
-                    <string name="siteText">Start bootstrap</string>
                 </property-set>
             </property-set>
         </property-set>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
@@ -74,7 +74,7 @@
             </property-set>
         </property-set>
         <property-set name="page">
-            <string name="controller">no.item.xp.starter.bootstrap3.agency:default</string>
+            <string name="controller">no.rbrastad.xp.bootstrap3.agency:default</string>
             <reference isNull="true" name="template"/>
             <property-set name="region">
                 <string name="name">main</string>
@@ -82,25 +82,24 @@
                     <string name="type">PartComponent</string>
                     <property-set name="PartComponent">
                         <string name="name">Banners</string>
-                        <string name="template">no.item.xp.starter.bootstrap3.agency:banner</string>
+                        <string name="template">no.rbrastad.xp.bootstrap3.agency:banner</string>
                         <property-set name="config">
-                            <property-set name="banners">
-                                <string name="title">Welcome To Our Studio!</string>
-                                <string name="body">IT'S NICE TO MEET YOU</string>
-                                <string name="buttonReadMoreText">read more</string>
-                                <string name="buttonReadMoreLink">#portfolio</string>
-                                <reference name="backgroundImage">b550a98a-67cc-48a3-9b2f-958a8e9282b3</reference>
-                            </property-set>
-                            <property-set name="banners">
-                                <string name="title">Have fun with this example  site</string>
-                                <string name="body">Need help ?</string>
-                                <string name="buttonReadMoreText">Contact us</string>
-                                <string name="buttonReadMoreLink">#contact</string>
-                                <reference name="backgroundImage">b550a98a-67cc-48a3-9b2f-958a8e9282b3</reference>
-                            </property-set>
-                            <boolean name="menuShow">false</boolean>
                             <property-set name="menuComponent">
                                 <boolean name="showInMenu">false</boolean>
+                            </property-set>
+                            <property-set name="banners">
+                                <string name="title">Welcome To Our Studio!</string>
+                                <string name="body">IT'S NICE TO MEET YOU READ MORE</string>
+                                <string name="buttonReadMoreText">Read more</string>
+                                <string name="buttonReadMoreLink">#services</string>
+                                <reference name="backgroundImage">25b90b80-3e3f-4180-8ff2-d70f6786d192</reference>
+                            </property-set>
+                            <property-set name="banners">
+                                <string name="title">You can add multiple banners</string>
+                                <string name="body">This is some  text</string>
+                                <string isNull="true" name="buttonReadMoreText"/>
+                                <string isNull="true" name="buttonReadMoreLink"/>
+                                <reference name="backgroundImage">25b90b80-3e3f-4180-8ff2-d70f6786d192</reference>
                             </property-set>
                         </property-set>
                     </property-set>
@@ -109,16 +108,15 @@
                     <string name="type">PartComponent</string>
                     <property-set name="PartComponent">
                         <string name="name">Services</string>
-                        <string name="template">no.item.xp.starter.bootstrap3.agency:services</string>
+                        <string name="template">no.rbrastad.xp.bootstrap3.agency:services</string>
                         <property-set name="config">
-                            <property-set name="services">
-                                <string name="title">Services</string>
-                                <string name="body">Lorem ipsum dolor sit amet consectetur.</string>
-                                <string name="preface">Lorem ipsum dolor sit amet consectetur.</string>
-                                <reference name="contentSourcePageKey">bb863b8f-78ce-4834-a271-030d63a389ba</reference>
-                            </property-set>
                             <property-set name="menuComponent">
                                 <boolean name="showInMenu">true</boolean>
+                            </property-set>
+                            <property-set name="services">
+                                <string name="title">Services</string>
+                                <string name="preface">Lorem ipsum dolor sit amet consectetur.</string>
+                                <reference name="contentSourcePageKey">10c6a94f-8e44-473a-a02c-fd4faaab52fe</reference>
                             </property-set>
                         </property-set>
                     </property-set>
@@ -127,15 +125,15 @@
                     <string name="type">PartComponent</string>
                     <property-set name="PartComponent">
                         <string name="name">Portfolio</string>
-                        <string name="template">no.item.xp.starter.bootstrap3.agency:portfolio</string>
+                        <string name="template">no.rbrastad.xp.bootstrap3.agency:portfolio</string>
                         <property-set name="config">
+                            <property-set name="menuComponent">
+                                <boolean name="showInMenu">true</boolean>
+                            </property-set>
                             <property-set name="portfolio">
                                 <string name="title">Portfolio</string>
                                 <string name="preface">Lorem ipsum dolor sit amet consectetur.</string>
-                                <reference name="contentSourcePageKey">25170b9d-9b8d-4e90-a29e-f25ed523e5cf</reference>
-                            </property-set>
-                            <property-set name="menuComponent">
-                                <boolean name="showInMenu">true</boolean>
+                                <reference name="contentSourcePageKey">8fb818d7-56fa-49ee-a7e0-734623366092</reference>
                             </property-set>
                         </property-set>
                     </property-set>
@@ -144,47 +142,43 @@
                     <string name="type">PartComponent</string>
                     <property-set name="PartComponent">
                         <string name="name">About</string>
-                        <string name="template">no.item.xp.starter.bootstrap3.agency:about</string>
+                        <string name="template">no.rbrastad.xp.bootstrap3.agency:about</string>
                         <property-set name="config">
+                            <property-set name="menuComponent">
+                                <boolean name="showInMenu">true</boolean>
+                            </property-set>
+                            <property-set name="aboutHeading">
+                                <string name="title">About</string>
+                                <string name="preface">Lorem ipsum dolor sit amet consectetur.</string>
+                            </property-set>
                             <property-set name="about">
-                                <string name="title">Our Humble Beginnings</string>
-                                <string isNull="true" name="preface"/>
-                                <string isNull="true" name="body"/>
-                                <reference name="image">f0d018ce-bfb4-439a-b3f1-aaad16cc7cdc</reference>
-                                <string name="shortText">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur&lt;/p&gt;</string>
                                 <string name="timeline">2009-2011</string>
+                                <string name="title">Our Humble Beginnings</string>
+                                <string name="shortText">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur&lt;/p&gt;</string>
+                                <reference name="image">4e3594fa-3744-4a97-9fb5-9973c4c0db5a</reference>
                             </property-set>
                             <property-set name="about">
                                 <string name="timeline">MARCH 2011</string>
                                 <string name="title">An Agency is Born</string>
                                 <string name="shortText">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur&lt;/p&gt;</string>
-                                <reference name="image">14a5d20e-092f-466a-85da-96a84f89ddc8</reference>
+                                <reference name="image">76e20452-a2b4-4331-acc3-193ef5580b81</reference>
                             </property-set>
                             <property-set name="about">
                                 <string name="timeline">DECEMBER 2012</string>
                                 <string name="title">Transition to Full Service</string>
                                 <string name="shortText">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur&lt;/p&gt;</string>
-                                <reference name="image">ee3023d3-cd6b-4515-b537-a6186ac3f069</reference>
+                                <reference name="image">23722169-d0a2-4793-8e0e-f4f586f043e6</reference>
                             </property-set>
                             <property-set name="about">
                                 <string name="timeline">JULY 2014</string>
                                 <string name="title">Phase Two Expansion</string>
                                 <string name="shortText">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur&lt;/p&gt;</string>
-                                <reference name="image">d9781441-3d84-42e4-8e29-d15601c5a91d</reference>
-                            </property-set>
-                            <string isNull="true" name="title"/>
-                            <string isNull="true" name="preface"/>
-                            <property-set name="aboutHeading">
-                                <string name="title">About</string>
-                                <string name="preface">Lorem ipsum dolor sit amet consectetur.</string>
+                                <reference name="image">099c9d45-b5e9-4c1d-8aab-6bcedba834da</reference>
                             </property-set>
                             <property-set name="aboutFooter">
-                                <string name="preface">&lt;p&gt;be&amp;nbsp;part&lt;/p&gt;
-&lt;p&gt;of&amp;nbsp;our&lt;/p&gt;
-&lt;p&gt;story!&lt;/p&gt;</string>
-                            </property-set>
-                            <property-set name="menuComponent">
-                                <boolean name="showInMenu">true</boolean>
+                                <string name="preface">&lt;p&gt;Be apart&lt;/p&gt;
+&lt;p&gt;of our&lt;/p&gt;
+&lt;p&gt;story&amp;nbsp;&lt;/p&gt;</string>
                             </property-set>
                         </property-set>
                     </property-set>
@@ -193,8 +187,11 @@
                     <string name="type">PartComponent</string>
                     <property-set name="PartComponent">
                         <string name="name">Team</string>
-                        <string name="template">no.item.xp.starter.bootstrap3.agency:team</string>
+                        <string name="template">no.rbrastad.xp.bootstrap3.agency:team</string>
                         <property-set name="config">
+                            <property-set name="menuComponent">
+                                <boolean name="showInMenu">true</boolean>
+                            </property-set>
                             <property-set name="teamHeading">
                                 <string name="title">OUR AMAZING TEAM</string>
                                 <string name="preface">Lorem ipsum dolor sit amet consectetur.</string>
@@ -203,29 +200,26 @@
                             <property-set name="person">
                                 <string name="name">Kay Garland</string>
                                 <string name="jobTitle">Lead Designer</string>
-                                <reference name="image">05dee211-4244-4fe0-bcc1-9b581f6b53f4</reference>
+                                <reference name="image">931392ff-130a-403d-abfd-4278390aee0c</reference>
                                 <string isNull="true" name="twitter"/>
-                                <string name="facebook">https://www.facebook.com/Item-Consulting-154950121219897/?fref=ts</string>
-                                <string name="linkedin">https://www.linkedin.com/company/item-consulting-as</string>
+                                <string isNull="true" name="facebook"/>
+                                <string isNull="true" name="linkedin"/>
                             </property-set>
                             <property-set name="person">
                                 <string name="name">Larry Parker</string>
                                 <string name="jobTitle">Lead Marketer</string>
-                                <reference name="image">bd2d68df-b6d2-4eae-973c-e5212d1037da</reference>
-                                <string name="twitter">https://twitter.com/itemtwitt</string>
+                                <reference name="image">b0f4f87c-ed51-45d9-aa83-65449dc5ccf6</reference>
+                                <string isNull="true" name="twitter"/>
                                 <string isNull="true" name="facebook"/>
-                                <string name="linkedin">https://www.linkedin.com/company/item-consulting-as</string>
+                                <string isNull="true" name="linkedin"/>
                             </property-set>
                             <property-set name="person">
                                 <string name="name">Diana Pertersen</string>
-                                <string name="jobTitle">Lead Developer</string>
-                                <reference name="image">4024bf92-0801-4690-ac00-61c7a8acdc5e</reference>
-                                <string name="twitter">https://twitter.com/itemtwitt</string>
-                                <string name="facebook">https://www.facebook.com/Item-Consulting-154950121219897/?fref=ts</string>
+                                <string name="jobTitle">Lead developer</string>
+                                <reference name="image">5bd07744-2ddd-4670-b067-ee27ca474e9f</reference>
+                                <string isNull="true" name="twitter"/>
+                                <string isNull="true" name="facebook"/>
                                 <string isNull="true" name="linkedin"/>
-                            </property-set>
-                            <property-set name="menuComponent">
-                                <boolean name="showInMenu">true</boolean>
                             </property-set>
                         </property-set>
                     </property-set>
@@ -233,26 +227,26 @@
                 <property-set name="component">
                     <string name="type">PartComponent</string>
                     <property-set name="PartComponent">
-                        <string name="name">Team</string>
-                        <string name="template">no.item.xp.starter.bootstrap3.agency:clients</string>
+                        <string name="name">Clients</string>
+                        <string name="template">no.rbrastad.xp.bootstrap3.agency:clients</string>
                         <property-set name="config">
                             <property-set name="menuComponent">
-                                <boolean name="showInMenu">false</boolean>
+                                <boolean name="showInMenu">true</boolean>
                             </property-set>
                             <property-set name="client">
-                                <reference name="logo">5ba9425a-0c26-49ff-89c7-54f2988548ea</reference>
-                                <string name="webUrl">http://www.item.no</string>
-                            </property-set>
-                            <property-set name="client">
-                                <reference name="logo">a35e3cb1-af84-4a60-b36e-083bb1782dd9</reference>
+                                <reference name="logo">f76ebfd5-d1ce-41df-b8ec-7a097bd8d139</reference>
                                 <string isNull="true" name="webUrl"/>
                             </property-set>
                             <property-set name="client">
-                                <reference name="logo">4e077790-f040-426d-a736-8727e8cccd10</reference>
+                                <reference name="logo">a05f8f96-effb-4323-aa35-3a87fc14ff19</reference>
                                 <string isNull="true" name="webUrl"/>
                             </property-set>
                             <property-set name="client">
-                                <reference name="logo">8e413111-a75e-4ecd-b70f-23cb5177d533</reference>
+                                <reference name="logo">aadf0502-dab6-47f8-b102-6f54e0288803</reference>
+                                <string isNull="true" name="webUrl"/>
+                            </property-set>
+                            <property-set name="client">
+                                <reference name="logo">6dae526c-7f1d-4274-b2a6-9fd547830ff7</reference>
                                 <string isNull="true" name="webUrl"/>
                             </property-set>
                         </property-set>
@@ -262,14 +256,14 @@
                     <string name="type">PartComponent</string>
                     <property-set name="PartComponent">
                         <string name="name">Contact</string>
-                        <string name="template">no.item.xp.starter.bootstrap3.agency:contact</string>
+                        <string name="template">no.rbrastad.xp.bootstrap3.agency:contact</string>
                         <property-set name="config">
                             <property-set name="menuComponent">
                                 <boolean name="showInMenu">true</boolean>
                             </property-set>
-                            <string name="title">Contact us</string>
+                            <string name="title">CONTACT US</string>
                             <string name="preface">ipsum lorum ipsum lorum ipsum lorum</string>
-                            <reference name="contentDestinationKey">356bd1f9-fe00-4626-a311-9faf3fccc16a</reference>
+                            <reference name="contentDestinationKey">1420bc3a-efd9-4bd8-a762-627394ef398c</reference>
                         </property-set>
                     </property-set>
                 </property-set>
@@ -310,6 +304,36 @@
                     </indexValueProcessors>
                 </indexConfig>
                 <path>data.htmlarea_text</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>creator</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>createdTime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>modifiedTime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -390,36 +414,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>type</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>creator</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>createdTime</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>modifiedTime</path>
             </pathIndexConfig>
         </pathIndexConfigs>
     </indexConfigs>

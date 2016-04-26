@@ -1,9 +1,9 @@
 <node>
-    <id>2571f512-7ac9-4781-94e3-b09868e39743</id>
+    <id>ab46f9ba-cb3d-48fd-895b-29876b30d787</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T18:52:20.699Z</timestamp>
-    <inheritPermissions>false</inheritPermissions>
+    <timestamp>2016-04-26T19:44:00.581Z</timestamp>
+    <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
             <allow type="array">
@@ -44,23 +44,23 @@
     </permissions>
     <data>
         <boolean name="valid">true</boolean>
-        <string name="displayName">Startup Framework</string>
-        <string name="type">no.item.xp.starter.bootstrap3.agency:portfolio</string>
+        <string name="displayName">STARTUP FRAMEWORK</string>
+        <string name="type">no.rbrastad.xp.bootstrap3.agency:portfolio</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-04-17T07:09:12.113Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:25:31.308Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-26T09:39:28.611Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:24:38.836Z</dateTime>
         <property-set name="data">
-            <string name="title">Startup Framework</string>
+            <string name="title">STARTUP FRAMEWORK</string>
             <string name="preface">Website Design</string>
             <string name="body">&lt;p&gt;Startup Framework is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.&lt;/p&gt;
 &lt;p&gt;You can preview Startup Framework here.&lt;/p&gt;</string>
-            <reference name="image">d15fc251-3d56-4d52-9d36-160a8b640ad5</reference>
-            <reference name="imagePreview">7bc82c76-c6c5-4b61-9ae9-e34a036eb88f</reference>
+            <reference name="imagePreview">c9352e6c-9834-4260-bf6d-deda20d18186</reference>
+            <reference name="image">7df2f075-560d-4f58-9897-9672cc0eb09f</reference>
         </property-set>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
@@ -100,6 +100,36 @@
                     </indexValueProcessors>
                 </indexConfig>
                 <path>data.htmlarea_text</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>creator</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>createdTime</path>
+            </pathIndexConfig>
+            <pathIndexConfig>
+                <indexConfig>
+                    <decideByType>false</decideByType>
+                    <enabled>true</enabled>
+                    <nGram>false</nGram>
+                    <fulltext>false</fulltext>
+                    <includeInAllText>false</includeInAllText>
+                </indexConfig>
+                <path>modifiedTime</path>
             </pathIndexConfig>
             <pathIndexConfig>
                 <indexConfig>
@@ -180,36 +210,6 @@
                     <includeInAllText>false</includeInAllText>
                 </indexConfig>
                 <path>type</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>creator</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>createdTime</path>
-            </pathIndexConfig>
-            <pathIndexConfig>
-                <indexConfig>
-                    <decideByType>false</decideByType>
-                    <enabled>true</enabled>
-                    <nGram>false</nGram>
-                    <fulltext>false</fulltext>
-                    <includeInAllText>false</includeInAllText>
-                </indexConfig>
-                <path>modifiedTime</path>
             </pathIndexConfig>
         </pathIndexConfigs>
     </indexConfigs>

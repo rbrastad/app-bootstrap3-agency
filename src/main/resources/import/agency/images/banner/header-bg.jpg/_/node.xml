@@ -1,8 +1,8 @@
 <node>
-    <id>b550a98a-67cc-48a3-9b2f-958a8e9282b3</id>
+    <id>25b90b80-3e3f-4180-8ff2-d70f6786d192</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T07:05:09.384Z</timestamp>
+    <timestamp>2016-04-26T19:44:00.677Z</timestamp>
     <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
@@ -46,10 +46,10 @@
         <boolean name="valid">true</boolean>
         <string name="displayName">header-bg.jpg</string>
         <string name="type">media:image</string>
-        <dateTime name="createdTime">2016-03-01T18:16:50.413Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:09:00.202Z</dateTime>
         <string name="creator">user:system:su</string>
         <string name="modifier">user:system:su</string>
-        <dateTime name="modifiedTime">2016-03-01T18:16:50.413Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:09:00.202Z</dateTime>
         <string name="owner">user:system:su</string>
         <property-set name="data">
             <property-set name="media">

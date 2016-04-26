@@ -1,9 +1,9 @@
 <node>
-    <id>daf8b209-90a2-42ed-ae64-84ae4266d071</id>
+    <id>aaf5b231-fe8e-4623-9b37-fe7c894233bf</id>
     <childOrder>modifiedtime DESC</childOrder>
     <nodeType>content</nodeType>
-    <timestamp>2016-04-25T18:53:09.477Z</timestamp>
-    <inheritPermissions>false</inheritPermissions>
+    <timestamp>2016-04-26T19:44:00.601Z</timestamp>
+    <inheritPermissions>true</inheritPermissions>
     <permissions>
         <principal key="role:cms.cm.app">
             <allow type="array">
@@ -45,27 +45,23 @@
     <data>
         <boolean name="valid">true</boolean>
         <string name="displayName">E-Commerce</string>
-        <string name="type">no.item.xp.starter.bootstrap3.agency:service</string>
+        <string name="type">no.rbrastad.xp.bootstrap3.agency:service</string>
         <string name="owner">user:system:su</string>
-        <dateTime name="modifiedTime">2016-03-26T19:07:29.251Z</dateTime>
+        <dateTime name="modifiedTime">2016-04-26T19:35:02.372Z</dateTime>
         <string name="modifier">user:system:su</string>
         <string name="creator">user:system:su</string>
-        <dateTime name="createdTime">2016-03-01T18:28:22.584Z</dateTime>
+        <dateTime name="createdTime">2016-04-26T19:30:32.705Z</dateTime>
         <property-set name="data">
-            <string name="title">E-Commerce</string>
+            <string name="title">E-Commerce </string>
             <string name="preface">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit</string>
-            <string name="body">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit&amp;nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit&amp;nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit&amp;nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit&lt;/p&gt;</string>
-            <reference name="image">b550a98a-67cc-48a3-9b2f-958a8e9282b3</reference>
+            <string isNull="true" name="body"/>
             <string name="fontAwesomeIcon">fa-shopping-cart</string>
         </property-set>
         <property-set name="x">
-            <property-set name="no-item-xp-starter-bootstrap3-agency">
+            <property-set name="no-rbrastad-xp-bootstrap3-agency">
                 <property-set name="menu-item">
                     <boolean name="menuItem">false</boolean>
                     <string isNull="true" name="menuName"/>
-                </property-set>
-                <property-set name="html-meta">
-                    <string isNull="true" name="htmlMetaDescription"/>
                 </property-set>
             </property-set>
         </property-set>
