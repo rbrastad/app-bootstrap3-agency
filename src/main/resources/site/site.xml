@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<display-name>Item Bootstrap Theme</display-name>
-<info>Enonix XP Bootstrap Web Module</info>
-<url>http://item.no/</url>
+<display-name>Agency Bootstrap Theme</display-name>
+<info>Enonix XP Bootstrap Agency Web App</info>
+<url>http://rbrastad.no/</url>
 <vendor>
-  <name>Item Consulting AS</name>
-  <url>http://www.item.no</url>
+  <name>Runar Brastad</name>
+  <url>http://www.rbrastad.no</url>
 </vendor>
 <config>
   <field-set name="settings">
