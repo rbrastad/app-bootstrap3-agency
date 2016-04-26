@@ -5,12 +5,6 @@ function handleGet(req) {
     var content = lib2render.part.resolveComponentContent();
     var config = content.component.config;
 
-    lib2render.log.debug({
-        name: 'ABOUT',
-        msg: 'This logs ABOUT part content data.',
-        json : content
-    });
-
     if( lib2render.util.notEmptyOrNull( config.about ) ){
         config.about = lib2render.util.toArray( config.about );
 

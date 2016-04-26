@@ -5,11 +5,6 @@ function handleGet(req) {
     var content =  lib2render.part.resolveComponentContent();
     var config = content.component.config;
 
-    lib2render.log.debug({
-        name: 'Services',
-        json : content
-    });
-
     if( lib2render.util.notEmptyOrNull( config.services.contentSourcePageKey ) ) {
         // Get children of pagekey
         var contents = lib2render.content.getChildren( config.services.contentSourcePageKey );

@@ -23,12 +23,6 @@ function handleGet(req) {
             "bodyEnd": ['<script type="text/javascript">$( document ).ready(function() { $("nav").removeClass("navbar-shrink") });</script>']
         };
 
-        lib2render.log.debug({
-            name: 'BANNER',
-            msg: 'Banner part',
-            json : content
-        });
-
         return lib2render.part.renderView( app.viewBanner , content, pageContributions);
     }else
         return lib2render.part.renderView( app.view412 , null);

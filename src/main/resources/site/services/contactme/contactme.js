@@ -4,11 +4,6 @@ var portalLib = require('/lib/xp/portal');
 var lib2render = require('/lib/rbrastad/lib2render');
 
 function saveForm(data) {
-  lib2render.log.debug({
-        name: 'Service contact me form sent in ',
-        json : data
-    });
-
     return contentLib.create({
         parentPath: data.path ,
         contentType: 'base:unstructured',

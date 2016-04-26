@@ -4,11 +4,6 @@ var app = require('/lib/app.js');
 function handleGet(req) {
     var componentContent =  lib2render.part.resolveComponentContent();
 
-    lib2render.log.debug({
-        name: 'Team',
-        json : componentContent
-    });
-
     if( lib2render.util.notEmptyOrNull(componentContent.component.config.person ) ) {
         // Convert the Person object into an a array for easier rendering.
         componentContent.component.config.person =  lib2render.util.toArray( componentContent.component.config.person );

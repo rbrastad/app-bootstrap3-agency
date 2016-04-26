@@ -8,12 +8,6 @@ function handleGet(req) {
     if(  lib2render.util.notEmptyOrNull( config.portfolio.contentSourcePageKey ) ) {
         content.contents = lib2render.content.getChildren( config.portfolio.contentSourcePageKey );
 
-        lib2render.log.debug({
-            name: 'Portfolio',
-            msg: 'Portfolio part',
-            json : content
-        });
-
         return lib2render.part.renderView( app.viewPortfolio , content);
     }else
         return lib2render.part.renderView( app.view412 , content);
